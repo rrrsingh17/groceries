@@ -19,3 +19,4 @@ htmlcov
 .coverage.*
 *,cover
 logs/
+.pre-commit-config.yaml
