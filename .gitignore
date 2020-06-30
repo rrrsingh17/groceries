@@ -20,3 +20,4 @@ htmlcov
 *,cover
 logs/
 .pre-commit-config.yaml
+.idea
