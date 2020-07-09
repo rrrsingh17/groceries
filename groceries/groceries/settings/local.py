@@ -1,10 +1,9 @@
-from .common import *   # NOQA
+from .common import *  # NOQA
 
 SECRET_KEY = '_dt^q^-^9*ea%@s#h^3#2m)#vk(u(8l*o3cc&s6Xi2AuABlrQ2'
-debug = True
+DEBUG = True
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 ALLOWED_HOSTS = []
-
 
 DATABASES = {
     'default': {

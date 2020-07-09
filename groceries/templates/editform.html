@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<title>EDIT DETAILS</title>
+<style>
+	/*add full-width input fields*/
+
+	input[type=text],
+	input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 2px solid #ccc;
+		box-sizing: border-box;
+	}
+	/* set a style for all buttons*/
+
+	button {
+		background-color: Green;
+		color: white;
+		padding: 15px 20px;
+		margin: 8px 0;
+		cursor: pointer;
+		width: 100%;
+	}
+	/*set styles for the cancel button*/
+
+	.cancelbtn {
+		padding: 15px 20px;
+		background-color: #FF2E00;
+	}
+	/*float cancel and signup buttons and add an equal width*/
+
+	.cancelbtn,
+	.signupbtn {
+		float: left;
+		width: 50%;
+	}
+	/*add padding to container elements*/
+
+	.container {
+		padding: 16px;
+	}
+	/*clear floats*/
+
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	/*styles for cancel button and signup button
+	on extra small screens*/
+
+	@media screen and (max-width: 300px) {
+		.cancelbtn,
+		.signupbtn {
+			width: 100%;
+		}
+	}
+</style>
+
+<body>
+
+	<h2>EDIT Form</h2>
+	<!--Step 1:Adding HTML-->
+	<form action="" style="border:1px solid #ccc" method="POST" >
+		{% csrf_token %}
+		<div class="container">
+			<label><b>Email</b></label>
+			<input type="text" placeholder={{email}} name="email" >
+
+			<label><b>First Name</b></label>
+			<input type="text" placeholder={{name}} name="first_name" >
+
+			<label><b>Last Name</b></label>
+			<input type="text" placeholder={{lastname}} name="last_name" >
+
+			<label><b>Mobile Number</b></label>
+			<input type="number" placeholder={{phone}} name="phone" >
+
+			<div>
+				<p>Choose gender</p>
+				<input type="radio" id="gender1"
+				 name="gender" value="M">
+				<label for="gender1">Male</label>
+
+				<input type="radio" id="gender2"
+				 name="gender" value="F">
+				<label for="gender2">Female</label>
+			</div>
+
+
+			<input type="checkbox" checked="checked"> Remember me
+			<p>To create an account you have to agree our <a href="#">Terms & Privacy</a>.</p>
+
+			<div class="clearfix">
+				<input type="submit">
+			</div>
+		</div>
+	</form>
+
+</body>
+
+</html>

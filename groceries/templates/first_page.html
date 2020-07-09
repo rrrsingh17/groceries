@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body action="first_page">
+{% csrf_token %}
+<h1><center>Welcome {{h}}</center></h1><br>
+<h4>Name : {{name}} {{lastname}}</h4><br>
+<h4>Email : {{email}}</h4><br>
+<h4>Phone Number : {{phone}}</h4><br>
+<a href="/signin/front/edit/">Edit</a>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-from os import environ # NOQA
+from os import environ  # NOQA
 
 env = environ['ENV'].lower() if 'ENV' in environ else 'development'
 
